@@ -13,8 +13,9 @@ body {
     justify-content: stretch;
     align-items: stretch;
     height: 100vh;
-    padding: 5px;
+    /* padding: 5px; */
     overflow: hidden;
+    border: 2px solid black;
 }
 
 .title-bar {
@@ -36,19 +37,24 @@ body {
     justify-content: space-between;
     align-items: stretch;
     overflow: hidden;
+    border-bottom: 2px solid black;
 }
 
-.sku-info {
+.left-panel {
     /* border: 2px solid green; */
     border-right: 2px solid black;
+    width: 300px;
+    position: sticky;
+    top: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+.sku-info-section {
     display: flex;
     flex-flow: column nowrap;
     justify-content: stretch;
     align-items: center;
-    width: 200px;
-    position: sticky;
-    top: 0;
-    padding: 10px 10px 10px 2px;
+    margin: 0 0 39px 0;
 }
 
 .image-area {
@@ -68,21 +74,32 @@ body {
     align-items: center;
     overflow-x: scroll;
     overflow-y: hidden;
-    min-height: 140px;
+    min-height: 180px;
+}
+
+.thumb {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumb img {
+    border: 2px solid black;
+    margin: 0 10px 10px 10px;
+}
+
+.thumb select {
+    width: 150px;
 }
 
 .thumb-primary {
     border: 2px solid black;;
 }
 
-.thumb {
-    border: 2px solid black;
-    margin: 0 10px 0 0;
-}
-
 button {
     border: 2px solid black;
-    background-color: lightgray;
+    background-color: rgb(211, 211, 211);
     border-radius: 5px;
     width: 47%;
     height: 25px;
@@ -94,5 +111,10 @@ button {
 
 button:active {
     box-shadow: 0px 0px 0px black;
+    background-color: rgb(173, 173, 173);
     transform: scale(.95);
+}
+
+.section-title {
+    font-weight: bold;;
 }
