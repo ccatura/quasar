@@ -59,6 +59,7 @@ body {
     justify-content: stretch;
     align-items: center;
     margin: 0 0 39px 0;
+    font-size: .9rem;
 }
 
 .image-area {
@@ -182,6 +183,20 @@ button:active {
     transform: scale(.95);
 }
 
+.btn-upload-image:active {
+    background-color: rgb(66, 139, 84);
+}
+
+.btn-commit:active {
+    background-color: rgb(185, 82, 82);
+}
+
 .section-title {
-    font-weight: bold;;
+    font-weight: bold;
+    width: 100%;
+    background-color: #99b4d1;
+    border: 2px solid black;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
