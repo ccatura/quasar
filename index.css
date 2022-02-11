@@ -82,6 +82,7 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .thumb img {
@@ -97,13 +98,63 @@ body {
     border: 2px solid black;;
 }
 
+.thumb-delete-image {
+    position: absolute;
+    right: 18px;
+}
+
+.thumb-approve-image {
+    position: absolute;
+    left: 18px;
+}
+
+.thumb-delete-image,
+.thumb-approve-image {
+    display: none;
+    background-color: white;
+    color:  black;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    top: 5px;
+    cursor: pointer;
+}
+
+.thumb:hover .thumb-delete-image,
+.thumb:hover .thumb-approve-image {
+    display: block;
+}
+
+.btn-group {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+}
+
+.btn-upload-image,
+.btn-commit         {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+}
+
+.btn-upload-image {
+    background-color: rgb(84, 185, 110);
+}
+
+.btn-commit {
+    background-color: rgb(238, 92, 92);
+}
+
 button {
     border: 2px solid black;
     background-color: rgb(211, 211, 211);
     border-radius: 5px;
-    width: 47%;
-    height: 25px;
-    font-size: .7rem;
+    flex-basis: 47%;
+    min-height: 25px;
+    font-size: .8rem;
     font-weight: bold;
     margin: 5px 0 5px 0;
     box-shadow: 2px 2px 5px black;
