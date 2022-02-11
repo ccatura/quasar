@@ -8,9 +8,10 @@ body {
 }
 
 .wrapper {
+    /* border: 5px solid green; */
     display: flex;
     flex-flow: column nowrap;
-    justify-content: stretch;
+    justify-content: flex-start;
     align-items: stretch;
     height: 100vh;
     /* padding: 5px; */
@@ -33,20 +34,23 @@ body {
 .mid-container {
     /* border: 2px solid red; */
     display: flex;
+    flex-basis: 100%;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: stretch;
     overflow: hidden;
-    border-bottom: 2px solid black;
+    /* border-bottom: 2px solid black; */
 }
 
 .left-panel {
     /* border: 2px solid green; */
     border-right: 2px solid black;
-    width: 300px;
+    max-width: 250px;
+    min-width: 250px;
     position: sticky;
     top: 0;
     padding: 10px 10px 10px 10px;
+    background-color: #f0f0f0;
 }
 
 .sku-info-section {
@@ -59,11 +63,18 @@ body {
 
 .image-area {
     /* border: 2px solid blue; */
-    overflow-y: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    flex-basis: 100%;
+    border-bottom: 2px solid black;
+    padding: 15px;
 }
 
 .image-area img {
     width: 100%;
+    max-width: 1600px;
 }
 
 .thumbs-container {
@@ -75,6 +86,7 @@ body {
     overflow-x: scroll;
     overflow-y: hidden;
     min-height: 180px;
+    background-color: #f0f0f0;
 }
 
 .thumb {
