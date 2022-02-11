@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <title>SuperNova Web</title>
+    <title>Quasar Image Databse</title>
 </head>
 <body>
     
 <div class="wrapper">
     <section class="title-bar">
-        <div class="title">SuperNova Web</div>
-        <div class="title">X</div>
+        <div class="title">Quasar Image Databse</div>
+        <div class="title" id="dimensions"></div>
+        <!-- <div class="title">X</div> -->
     </section>
     <section class="mid-container">
         <div class="left-panel">
@@ -49,11 +50,15 @@
                 </div>
             </section>
 
+            <!-- <section class="sku-info-section">
+                <div id="dimensions"></div>
+            </section> -->
+
 
         </div>
 
         <div class="image-area">
-            <img class="preview-image" src="./images/ACN__WPG671-7__973Xo.jpg" alt="">
+            <img id="preview-image" src="./images/ACN__WPG671-7__973Xo.jpg" alt="">
         </div>
 
     </section>
@@ -110,5 +115,7 @@
 
 
 </div>
+<script src="./index.js" defer></script>
+
 </body>
 </html>
