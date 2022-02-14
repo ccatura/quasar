@@ -3,7 +3,7 @@ var x = document.getElementById("preview-image");
 var currWidth = x.clientWidth;
 var currHeight = x.clientHeight;
 
-document.getElementById("dimensions").innerHTML = ("Width: " + currWidth + " - " + "Height:" + currHeight);
+document.getElementById("dimensions").innerHTML = ("W: <b>" + currWidth + "</b>  " + " H: <b>" + currHeight +"</b>");
 }, 500);
 
 
